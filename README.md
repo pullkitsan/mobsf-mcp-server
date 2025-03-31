@@ -2,6 +2,7 @@
 
 This is an MCP (Model Context Protocol) compatible tool that allows MobSF (Mobile Security Framework) to scan APK and IPA files directly via Claude, 5ire, or any MCP-capable client.
 
+
 🚀 Features
 
 Supports APK and IPA file scanning
@@ -18,6 +19,7 @@ Automatically filters large results like strings or secrets (to prevent output o
 
 MCP-compatible interface via server.ts
 
+
 🎞️ Installation
 
 Clone the repo and install dependencies:
@@ -25,6 +27,7 @@ Clone the repo and install dependencies:
 git clone https://github.com/yourusername/mobsf-mcp.git
 cd mobsf-mcp
 npm install
+
 
 🔐 Setup
 
@@ -36,6 +39,7 @@ Edit .env to include your MobSF API key:
 
 MOBSF_API_KEY=your_mobsf_api_key_here
 MOBSF_URL=http://localhost:8000
+
 
 ▶️ Run the Server
 
@@ -60,6 +64,7 @@ Or:
   "file": "/absolute/path/to/app.ipa"
 }
 
+
 📁 Project Structure
 
 mobsf-mcp/
@@ -70,13 +75,15 @@ mobsf-mcp/
 ├── .env.example           # Template for env setup
 └── .gitignore
 
+
 📌 Notes
 
 Only .apk and .ipa file types are supported.
 
 This tool avoids fetching large fields like raw strings or source code dumps to keep responses fast and compliant with Claude/5ire message limits.
 
-✅ MCP JSON (Example)
+
+✅ Claude Config file (Example)
 
 {
   "mcpServers": {
