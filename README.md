@@ -77,6 +77,3 @@ MOBSF_URL=http://localhost:8000 </pre>
   }
 } </pre>
 
-📄 License
-
-MIT © 2025
