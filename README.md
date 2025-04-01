@@ -43,7 +43,7 @@ Copy the .env.example to .env:
 
 Edit .env to include your MobSF API key:
 
-<pre>MOBSF_API_KEY=your_mobsf_api_key_here
+<pre>MOBSF_API_KEY=<YOUR_MOBSF_API_KEY>
 
 MOBSF_URL=http://localhost:8000 </pre>
 
