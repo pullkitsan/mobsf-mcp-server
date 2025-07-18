@@ -6,8 +6,9 @@ This is an MCP (Model Context Protocol) compatible tool that allows MobSF (Mobil
 
 # Prerequisites
 
-* MobSF should be installed on the system. 
+* MobSF should be installed( and running ) on the system. 
 * Download the [MCP typescript sdk](https://github.com/modelcontextprotocol/typescript-sdk) and rename the folder to sdk.
+* npm should be installed on the system
 
 # 🚀 Features
 
@@ -33,6 +34,11 @@ Clone the repo and install dependencies:
 <pre>git clone https://github.com/yourusername/mobsf-mcp.git
 cd mobsf-mcp
 npm install </pre>
+
+# Troubleshooting
+
+Go inside mobsf server directory and run 'npx tsx server.ts'.
+Install any missing npm dependency if any.
 
 
 # 🔐 Setup
@@ -76,4 +82,16 @@ MOBSF_URL=http://localhost:8000 </pre>
     }
   }
 } </pre>
+
+# ✅ 5ire Config file example ( Windows)
+<pre>
+  {
+  "key": "mobsf",
+  "command": "npx",
+  "args": [
+    "tsx",
+    "C:\\Users\\Downloads\\mobsf-mcp-server\\server.js"
+  ]
+}
+</pre>
 
