@@ -86,17 +86,30 @@ async function scanFile({ file }: ScanArgs) {
 
     const summary = scanType === "apk"
       ? {
-          app_name: report.app_name,
+         app_name: report.app_name,
           package_name: report.package_name,
           version_name: report.version_name,
           permissions: report.permissions,
           exported_activities: report.exported_activities,
+          main_activity: report.main_activity,
+          activities: report.activities,
           services: report.services,
           receivers: report.receivers,
           providers: report.providers,
+          libraries: report.libraries,
+          certificate_analysis:{
+            certificate_summary: report.certificate_summary
+          },
+          manifest_analysis:{
+            manifest_findings: report.manifest_findings
+          },
+          android_api: report.android_api,
+          code_analysis: report.code_analysis,
+          urls: report.urls,
+          domains: report.domains,
+          firebase_urls: report.firebase_urls,
           analysis_findings: {
             manifest_analysis: report.manifest_analysis,
-            //code_analysis: report.code_analysis,
             urls: report.urls,
             domains: report.domains,
             tracker_analysis: report.tracker_analysis,
